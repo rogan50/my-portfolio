@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rogan Amuhgwa | Frontend Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--header/navigation-->
+<header>
+    <nav class="navbar">
+        <div class="logo">Rogan Amuhgwa</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Hero Section-->
+<section class="hero">
+<img src="InCollage_20250127_212959456 (1).jpg" alt="my profile picture">
+<div class="hero-content">
+    <h1>Hello, I'm Gweji Rogan Amuhgwa</h1>
+    <p>Frontend Developer | HTML, CSS, JavaScript | Creating Beautiful and Responsive Websites</p>
+</div>
+</section>
+
+<!--About Section-->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a passionate Frontend Developer with experience building responsive and interactive websites using HTML,
+            CSS, and JavaScript. I love turning ideas into user-friendly websites.
+        </p>
+        <div class="skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>Git & GitHub</span>
+        </div>
+    </div>
+</section>
+
+<!--project section-->
+<section id="project" class="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="landing.png" alt="project 1">
+                <h3>Landing Page</h3>
+                <p>A modern Landing page designed with responsive designed principles.</p>
+                <a href="landing.html" target="_blank" class="project-btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="game.png" alt="Project 2">
+                <h3>A Typing Game</h3>
+                <p>A typing game to improve typing skills and be able to type at the speed of light.</p>
+                <a href="game.html" target="_blank" class="project-btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="portfolio.png" alt="Project 3">
+                <h3>Portfolio Website</h3>
+                <p>A responsive and professional portolio website showcasing my skills.</p>
+                <a href="#" target="_blank" class="project-btn">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--contact section-->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Interested in working together? Send me a message!</p>
+        <form id="contact-form" action="https://formspree.io/f/mdkdrvbn" method="POST">
+        <input type="hidden" name="_replyto" value="amuhgwa@email.com">
+        <label>
+        <input type="text"  name="name" placeholder="Your Name" required>
+        </label>
+        <label>
+        <input type="email" name="email" placeholder="Your Email" required>
+        </label>
+        <label>
+        <textarea  name="message" placeholder="Your Message" required></textarea>
+        </label>
+        <!--optional subject-->
+        <input type="hidden" name="_subject" value="New portolio message">
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-status" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+    <p>&copy;2025 Rogan Amuhgwa | Frontend Developer</p>
+    <div class="social-links">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Linked</a>
+        <a href="#" target="_blank">Twitter</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

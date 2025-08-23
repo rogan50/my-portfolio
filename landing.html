@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<title>Landing Page</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background: darkred;
+        position: fixed;
+        width: 100%;
+        color: white;
+        padding: 1rem 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: limegreen;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 80px 20px;
+        background: #6b6767;
+        color: white;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .hero button {
+        background: limegreen;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .hero button:hover {
+        background: green;
+    }
+
+    .features{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 50px 5%;
+        background: #f9f9f9;
+    }
+    .feature-box{
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    .feature-box:hover{
+    transform: translateY(-5px);
+    }
+.feature-box h3 {
+color: darkred;
+margin-bottom: 10px;
+
+}
+
+.cta {
+text-align: center;
+padding: 50px 20px;
+background: darkred;
+color: white;
+}
+.cta button{
+background: limegreen;
+border: none;
+padding: 12px 25px;
+font-size: 1rem;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px;
+transition: background 0.3s;
+}
+.cta button a{
+text-decoration: none;
+color: white;
+}
+.cta button:hover{
+background: green;
+}
+
+
+
+footer{
+text-align: center;
+padding: 20px;
+background: #222;
+color: #bbb;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>My Landing</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<section class="hero">
+    <h2>Build Your Online Presence</h2>
+    <button>Get Started</button>
+</section>
+
+<section class="features">
+    <div class="feature-box">
+        <h3>Fast</h3>
+        <p>Optimized for performance to deliver the best user experience.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Responsive</h3>
+        <p>Looks great on desktop, table, and mobile devices.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Modern</h3>
+        <p>Clean and attractive design using modern CSS techniques</p>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Ready to start?</h2>
+    <p>Take your project to the next level today.</p>
+    <button><a href="index.html#contact">Contact Me</a></button>
+</section>
+
+<footer>
+    <p>&copy; 2025 My landing. All rights reserved.</p>
+</footer>
+</body>
+</html>

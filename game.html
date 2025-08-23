@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+<div class="game-container">
+<h1>Typing Game</h1>
+<p>High Score: <span id="high-score">0</span></p>
+
+
+<div id="word-display">Press Start</div>
+
+<input type="text" id="word-input" placeholder="Type the word here..." disabled>
+
+<div class="info">
+<p>Time: <span id="time">30</span></p>
+<p>Score: <span id="score">0</span></p>
+<p>Missed: <span id="missed">0</span></p>
+</div>
+
+<button id="start-button">Start Game</button>
+
+<div id="game-over" class="hidden">
+<h2>Game Over!</h2>
+<p>Your Score: <span id="final-score">0</span></p>
+<p>Missed Words: <span id="missed-words">0</span></p>
+<button id="restart-button">Play Again</button>
+</div>
+
+<audio id="correct-sound" src="c:\Users\Wiki-Teck Media\Desktop\website\Clapping Sound Effect  _1 (HD) - HIGH QUALITY(MP3_160K)-[AudioTrimmer.com] (3).mp3"></audio>
+<audio id="wrong-sound" src="c:\Users\Wiki-Teck Media\Desktop\website\KOJO BLAK - Small Thing (Official Visualizer)(MP3_160K)-[AudioTrimmer.com].mp3"></audio>
+</div>
+
+ 
+  </main>
+
+</script>
+<script src="game.js"></script>
+
+</body>
+</html>
